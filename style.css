@@ -1,0 +1,89 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: azure;
+}
+
+.hamburger {
+  width: 300px;
+  height: 350px;
+}
+
+.bread-top{
+  margin:10px auto 0 auto ;
+  background-color:#F5B517;
+  width: 250px;
+  height: 100px;
+  border-radius: 250px 250px 10px 10px;
+  border:15px solid #F1971F;
+}
+
+.cheese {
+  margin:0 auto 0 auto;
+  background-color:#F2E13B;
+  width: 270px;
+  height: 15px;
+  border-radius: 5px;
+}
+
+.beef {
+  margin:0 auto 0 auto;
+  background-color:#6E321A;
+  width: 300px;
+  height: 50px;
+  border-radius: 60px;
+  border-bottom: 15px solid #481804;
+  border-top: 3px solid #481804;
+}
+
+.lettuce{
+  margin:0 auto 0 auto;
+  background: #91C73E;
+  width: 250px;
+  height: 22px;
+  position: relative;
+  border-radius: 5px;
+}
+.lettuce::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 20px;
+  background-size: 50px 20px;
+  background-image:
+    radial-gradient(circle at 25px -3px, transparent 23px,#E44229 10px);
+}
+
+.tomato {
+  margin:0 auto 0 auto;
+  background: #E44229;
+  width: 250px;
+  height: 5px;
+  position: relative;
+  border-radius: 0 0 5px 5px;
+}
+
+.bread-bottom {
+  margin:0 auto 0 auto ;
+  background-color:#F5B517;
+  width: 260px;
+  height: 75px;
+  border-radius: 10px 10px 50px 50px;
+  border:15px solid #F1971F;
+}
+
+.grow { 
+  transition: all .2s ease-in-out; 
+}
+
+.grow:hover { transform: scale(1.1); }
